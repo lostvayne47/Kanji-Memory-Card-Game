@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mediumbackground"
+    tools:context=".Easy_Level">
+
+    <TextView
+        android:id="@+id/timertextView"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="133dp"
+        android:padding="10dp"
+        android:text="00:30"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timer_start"
+        android:layout_width="116dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="timer"
+        android:text="START"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/medium_memory_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <ImageView
+            android:id="@+id/mediumimageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="50dp"
+            android:onClick="animate"
+            android:tag="1"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="2"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="3"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="4"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="5"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="6"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="6"
+            app:srcCompat="@drawable/questionmark" />
+
+        <ImageView
+            android:id="@+id/mediumimageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="animate"
+            android:tag="6"
+            app:srcCompat="@drawable/questionmark" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
