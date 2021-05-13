@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Easy_Level extends AppCompatActivity {
 
-    TextView timer_textView;            //timertextview declaration
+    TextView timer_textView_1;            //timertextview declaration
     ImageView im1,im2,im3,im4,im5,im6; //imageview declaration
     CountDownTimer countDownTimer;    //countdown timer declaration
     int time_taken =0; //to keep track of time left during the game
