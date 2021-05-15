@@ -18,14 +18,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView header;              //variables declared globally
-    Button view_score;         //view button declaration
+    TextView header;            //variables declared globally
+    Button view_score;          //view button declaration
     Button play_button;         //play button button declaration
-    Button easy_difficulty;   //easy button declaration
-    Button medium_difficulty; //medium button declaration
-    Button hard_difficulty;   //hard button declaration
+    Button easy_difficulty;     //easy button declaration
+    Button medium_difficulty;   //medium button declaration
+    Button hard_difficulty;     //hard button declaration
+    Button glossary;            //Glossary button declaration
 
-    Intent change_activity;  //intent to switch between various activities
+    Intent change_activity;     //intent to switch between various activities
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -85,24 +86,33 @@ public class MainActivity extends AppCompatActivity {
                 change_activity=new Intent(getApplicationContext(),Hard_Level.class);
                 startActivity(change_activity);
                 break;
-            }                                                                                  //going to hard level
+            }                                                                                //going to hard level
         }
 
     } //switch to respective difficulty level activity
 
+    public void glossarywindow(View view){
+        change_activity=new Intent(getApplicationContext(),Glossary.class);
+        startActivity(change_activity);
+    }                          //switch to glossary activity
     public void leaderboard(View view){
         //Toast.makeText(this,"WORKING",Toast.LENGTH_SHORT).show();
         change_activity=new Intent(getApplicationContext(),score_page.class);
         startActivity(change_activity);
-    }
+    }                          //switch to leaderboard activity
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //getActionBar().hide();                                             //To Hide the Action Bar
+
         header=(TextView)findViewById(R.id.title_textview);                //main heading of the program
         view_score=(Button)findViewById(R.id.viewscore_button);            //button for going into view score section
         play_button=(Button)findViewById(R.id.play_button);                 //button for going to play game section
+        glossary=(Button)findViewById(R.id.glossary_button);                //buttton for going to glossary section
 
         easy_difficulty=(Button)findViewById(R.id.easy_difficulty);        //buttons for various difficulty levels
         medium_difficulty=(Button)findViewById(R.id.medium_difficulty);
