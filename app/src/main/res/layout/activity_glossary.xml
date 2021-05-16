@@ -155,7 +155,6 @@
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/glossary_cardview_5"
                 android:layout_width="wrap_content"
@@ -354,6 +353,731 @@
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_11"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji11" />
+
+                <TextView
+                    android:id="@+id/card_text_11.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：こころ、ごころ                           On reading：しん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_11.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="HEART"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_12"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji12" />
+
+                <TextView
+                    android:id="@+id/card_text_12.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading： おとこ　                       On reading：だん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_12.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="MAN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_13"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji13" />
+
+                <TextView
+                    android:id="@+id/card_text_13.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：おんな　                      On reading：じょ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_13.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="WOMAN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_14"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji14" />
+
+                <TextView
+                    android:id="@+id/card_text_14.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：くち、ぐち　                                     On reading：こう"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_14.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="MOUTH"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_15"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji15" />
+
+                <TextView
+                    android:id="@+id/card_text_15.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ひと、びと　                    On reading：        じん、にん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_15.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="PERSON"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_16"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji16" />
+
+                <TextView
+                    android:id="@+id/card_text_16.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：つき                           On reading：        げつ、がつ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_16.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="MOON"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_17"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji17" />
+
+                <TextView
+                    android:id="@+id/card_text_17.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ひ、び、か                           On reading：        にち、にっ、じつ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_17.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="SUN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_18"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji18" />
+
+                <TextView
+                    android:id="@+id/card_text_18.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：とし                                On reading：ねん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_18.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="YEAR"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_19"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji19" />
+
+                <TextView
+                    android:id="@+id/card_text_19.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：まる・い                    On reading：えん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_19.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="YEN/CIRCLE"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_20"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji20"/>
+
+                <TextView
+                    android:id="@+id/card_text_20.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ひと・つ    On reading：いち、いっ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_20.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="ONE"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_21"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji21" />
+
+                <TextView
+                    android:id="@+id/card_text_21.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ふた・つ                  On reading：に"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_21.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="TWO"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_22"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji22" />
+
+                <TextView
+                    android:id="@+id/card_text_22.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：みっ・つ              On reading：さん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_22.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="THREE"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_23"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji23" />
+
+                <TextView
+                    android:id="@+id/card_text_23.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：よっ・つ、よん、よ                          On reading：し"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_23.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="FOUR"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_24"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji24" />
+
+                <TextView
+                    android:id="@+id/card_text_24.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：いつ・つ                   On reading：ご"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_24.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="FIVE"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_25"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji25" />
+
+                <TextView
+                    android:id="@+id/card_text_25.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：むっ・つ               On reading：         ろく、ろっ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_25.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="SIX"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_26"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji26" />
+
+                <TextView
+                    android:id="@+id/card_text_26.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：なな・つ                   On reading：しち"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_26.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="SEVEN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_27"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji27" />
+
+                <TextView
+                    android:id="@+id/card_text_27.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：やっ・つ、よう                On reading：        はち、はっ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_27.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="EIGHT"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_28"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji28" />
+
+                <TextView
+                    android:id="@+id/card_text_28.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ここの・つ                           On reading：く、きゅう"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_28.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="NINE"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_29"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji29" />
+
+                <TextView
+                    android:id="@+id/card_text_29.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：とお       On reading：じゅう、じゅっ、じっ"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_29.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="TEN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_30"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji30" />
+
+                <TextView
+                    android:id="@+id/card_text_30.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="On reading：ひゃく、ひゃっ、びゃく、ぴゃく"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_30.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="HUNDRED"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_31"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <ImageView
+                    android:id="@+id/card_image_31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji31" />
+
+                <TextView
+                    android:id="@+id/card_text_31.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Kun reading：ち                          On reading：        せん、ぜん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_31.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="THOUSAND"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/glossary_cardview_32"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/card_image_32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kanji32" />
+
+                <TextView
+                    android:id="@+id/card_text_32.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="75dp"
+                    android:text="On reading：                            まん、ばん"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_text_32.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="TEN THOUSAND"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 
