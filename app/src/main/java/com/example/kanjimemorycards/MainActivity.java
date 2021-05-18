@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         play_button.setVisibility(View.INVISIBLE);                  //change visibility of the initial headings and buttons
         view_score.setVisibility(View.INVISIBLE);
         header.setVisibility(View.INVISIBLE);
+        glossary.setVisibility(View.INVISIBLE);
 
         easy_difficulty.setVisibility(View.VISIBLE);              //change visibility of the buttons to display difficulty options
         medium_difficulty.setVisibility(View.VISIBLE);
