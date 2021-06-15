@@ -44,6 +44,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：き、こ                                              On reading：もく、ぼく"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -52,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="TREE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -77,6 +79,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：やま        On reading：さん、ざん"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -85,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="MOUNTAIN"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -109,7 +113,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：かわ、がわ               On reading：せん"
+                    android:text="Kun reading：かわ、がわ                                         On reading：せん"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -118,6 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="RIVER"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -143,6 +149,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：た　   On reading：でん"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -151,6 +158,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="RICE FIELD"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -176,6 +184,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：ひ、び　                        On reading：か"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -184,6 +193,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="FIRE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -209,6 +219,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：みず　                      On reading：すい"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -217,6 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="WATER"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -242,6 +254,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：かね　On reading：きん"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -250,6 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="GOLD"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -275,6 +289,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="Kun reading：つち　        On reading：ど、と"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -283,6 +298,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="GROUND"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -307,7 +323,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：まな・ぶ                      On reading：            がく、がっ"
+                    android:text="Kun reading：まな・ぶ                                     On reading：            がく、がっ"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -316,6 +333,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="STUDY"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -341,6 +359,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
                     android:text="On reading:                              おう"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
@@ -349,6 +368,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="KING"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -373,6 +393,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：こころ、ごころ                           On reading：しん"
                     android:textSize="20sp" />
 
@@ -382,6 +403,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="HEART"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -406,7 +428,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading： おとこ　                       On reading：だん"
+                    android:textColor="#000000"
+                    android:text="Kun reading： おとこ　                                    On reading：だん"
                     android:textSize="20sp" />
 
                 <TextView
@@ -415,6 +438,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="MAN"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -439,6 +463,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：おんな　                      On reading：じょ"
                     android:textSize="20sp" />
 
@@ -447,6 +472,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
+                    android:textColor="#000000"
                     android:text="WOMAN"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -472,6 +498,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：くち、ぐち　                                     On reading：こう"
                     android:textSize="20sp" />
 
@@ -481,6 +508,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="MOUTH"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -505,7 +533,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：ひと、びと　                    On reading：        じん、にん"
+                    android:textColor="#000000"
+                    android:text="Kun reading：ひと、びと　                                 On reading：              じん、にん"
                     android:textSize="20sp" />
 
                 <TextView
@@ -514,6 +543,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="PERSON"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -538,7 +568,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：つき                           On reading：        げつ、がつ"
+                    android:textColor="#000000"
+                    android:text="Kun reading：つき                           On reading：             げつ、がつ"
                     android:textSize="20sp" />
 
                 <TextView
@@ -547,6 +578,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="MOON"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -571,7 +603,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：ひ、び、か                           On reading：        にち、にっ、じつ"
+                    android:textColor="#000000"
+                    android:text="Kun reading：ひ、び、か                           On reading：           にち、にっ、じつ"
                     android:textSize="20sp" />
 
                 <TextView
@@ -580,6 +613,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="SUN"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -604,6 +638,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：とし                                On reading：ねん"
                     android:textSize="20sp" />
 
@@ -613,6 +648,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="YEAR"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -637,7 +673,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：まる・い                    On reading：えん"
+                    android:textColor="#000000"
+                    android:text="Kun reading：           まる・い                        On reading：えん"
                     android:textSize="20sp" />
 
                 <TextView
@@ -646,6 +683,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="YEN/CIRCLE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -670,7 +708,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：ひと・つ    On reading：いち、いっ"
+                    android:textColor="#000000"
+                    android:text="Kun reading：           ひと・つ                  On reading：いち、いっ"
                     android:textSize="20sp" />
 
                 <TextView
@@ -679,6 +718,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="ONE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -703,7 +743,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：ふた・つ                  On reading：に"
+                    android:textColor="#000000"
+                    android:text="Kun reading：          ふた・つ                  On reading：に"
                     android:textSize="20sp" />
 
                 <TextView
@@ -712,6 +753,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="TWO"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -736,7 +778,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：みっ・つ              On reading：さん"
+                    android:textColor="#000000"
+                    android:text="Kun reading：  みっ・つ                   On reading：さん"
                     android:textSize="20sp" />
 
                 <TextView
@@ -745,6 +788,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="THREE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -769,6 +813,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：よっ・つ、よん、よ                          On reading：し"
                     android:textSize="20sp" />
 
@@ -777,6 +822,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
+                    android:textColor="#000000"
                     android:text="FOUR"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -802,7 +848,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：いつ・つ                   On reading：ご"
+                    android:textColor="#000000"
+                    android:text="Kun reading：          いつ・つ                   On reading：ご"
                     android:textSize="20sp" />
 
                 <TextView
@@ -811,6 +858,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="FIVE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -835,7 +883,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：むっ・つ               On reading：         ろく、ろっ"
+                    android:textColor="#000000"
+                    android:text="Kun reading：  むっ・つ                  On reading： ろく、ろっ"
                     android:textSize="20sp" />
 
                 <TextView
@@ -844,6 +893,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="SIX"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -868,7 +918,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：なな・つ                   On reading：しち"
+                    android:textColor="#000000"
+                    android:text="Kun reading：  なな・つ                         On reading：しち"
                     android:textSize="20sp" />
 
                 <TextView
@@ -877,6 +928,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="SEVEN"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -901,7 +953,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：やっ・つ、よう                On reading：        はち、はっ"
+                    android:textColor="#000000"
+                    android:text="Kun reading：  やっ・つ、よう                On reading：             はち、はっ"
                     android:textSize="20sp" />
 
                 <TextView
@@ -910,6 +963,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="EIGHT"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -934,6 +988,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：ここの・つ                           On reading：く、きゅう"
                     android:textSize="20sp" />
 
@@ -943,6 +998,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="NINE"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -967,6 +1023,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="Kun reading：とお       On reading：じゅう、じゅっ、じっ"
                     android:textSize="20sp" />
 
@@ -976,6 +1033,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="TEN"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -1000,6 +1058,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
+                    android:textColor="#000000"
                     android:text="On reading：ひゃく、ひゃっ、びゃく、ぴゃく"
                     android:textSize="20sp" />
 
@@ -1009,6 +1068,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:text="HUNDRED"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
@@ -1033,7 +1093,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="50dp"
-                    android:text="Kun reading：ち                          On reading：        せん、ぜん"
+                    android:textColor="#000000"
+                    android:text="Kun reading：ち                          On reading：           せん、ぜん"
                     android:textSize="20sp" />
 
                 <TextView
@@ -1041,6 +1102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
+                    android:textColor="#000000"
                     android:text="THOUSAND"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -1066,6 +1128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="75dp"
+                    android:textColor="#000000"
                     android:text="On reading：                            まん、ばん"
                     android:textSize="20sp" />
 
@@ -1074,6 +1137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
+                    android:textColor="#000000"
                     android:text="TEN THOUSAND"
                     android:textSize="30sp"
                     android:textStyle="bold" />

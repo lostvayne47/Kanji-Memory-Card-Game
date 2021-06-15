@@ -2,6 +2,7 @@ package com.example.kanjimemorycards;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -21,27 +22,68 @@ public class Easy_Level extends AppCompatActivity {
     TextView timer_textView;            //timertextview declaration
     ImageView im1,im2,im3,im4,im5,im6; //imageview declaration
     CountDownTimer countDownTimer;    //countdown timer declaration
-    int time_taken =0; //to keep track of time left during the game
-    int gamescore=0; //to keep track of the score of the game
-    int cardCount=0; //to keep track of number of cards drawn at any time
-    boolean gamestate=false; //to keep track of the game state whether the timer button is clicked
+    int time_taken =0;                //to keep track of time left during the game
+    int gamescore=0;                    //to keep track of the score of the game
+    int cardCount=0;                //to keep track of number of cards drawn at any time
+    boolean gamestate=false;        //to keep track of the game state whether the timer button is clicked
 
-    Intent change_activity;  //intent to switch between various activities
-    int[] imageArray = {R.drawable.kanji1, R.drawable.tree, R.drawable.kanji3, R.drawable.river, R.drawable.kanji5, R.drawable.fire};      //set of images to be shuffled randomly
-    int[][] solutions={{R.drawable.kanji1, R.drawable.tree},{R.drawable.kanji3, R.drawable.river},{R.drawable.kanji5, R.drawable.fire}};  //solution set manually created
+    Intent change_activity;         //intent to switch between various activities
 
-    static void shuffleArray(int[] arr)   //Code to Shuffle image array
+    int[] imagedatabase ={R.drawable.kanji1, R.drawable.tree,R.drawable.kanji2,R.drawable.hill,R.drawable.kanji3, R.drawable.river,
+            R.drawable.kanji4,R.drawable.ricefield,R.drawable.kanji5, R.drawable.fire,R.drawable.kanji6,R.drawable.water,
+            R.drawable.kanji7,R.drawable.gold,R.drawable.kanji8,R.drawable.soil,R.drawable.kanji9,R.drawable.study,
+            R.drawable.kanji10,R.drawable.king,R.drawable.kanji11,R.drawable.heart,R.drawable.kanji12,R.drawable.man,
+            R.drawable.kanji13,R.drawable.woman,R.drawable.kanji14,R.drawable.mouth,R.drawable.kanji15,R.drawable.person,
+            R.drawable.kanji16,R.drawable.moon,R.drawable.kanji17,R.drawable.sun,R.drawable.kanji18,R.drawable.year,
+            R.drawable.kanji19,R.drawable.yen,R.drawable.kanji20,R.drawable.one,R.drawable.kanji21,R.drawable.two,
+            R.drawable.kanji22,R.drawable.three,R.drawable.kanji23,R.drawable.four,R.drawable.kanji24,R.drawable.five,
+            R.drawable.kanji25,R.drawable.six,R.drawable.kanji26,R.drawable.seven,R.drawable.kanji27,R.drawable.eight,
+            R.drawable.kanji28,R.drawable.nine,R.drawable.kanji29,R.drawable.ten,R.drawable.kanji30,R.drawable.hundred,
+            R.drawable.kanji31,R.drawable.thousand,R.drawable.kanji32,R.drawable.ten_thousand};                //Image database
+
+    int[][] solutions={{R.drawable.kanji1, R.drawable.tree},{R.drawable.kanji2,R.drawable.hill},{R.drawable.kanji3, R.drawable.river},
+            {R.drawable.kanji4,R.drawable.ricefield},{R.drawable.kanji5, R.drawable.fire},{R.drawable.kanji6,R.drawable.water},
+            {R.drawable.kanji7,R.drawable.gold},{R.drawable.kanji8,R.drawable.soil},{R.drawable.kanji9,R.drawable.study},
+            {R.drawable.kanji10,R.drawable.king},{R.drawable.kanji11,R.drawable.heart},{R.drawable.kanji12,R.drawable.man},
+            {R.drawable.kanji13,R.drawable.woman},{R.drawable.kanji14,R.drawable.mouth},{R.drawable.kanji15,R.drawable.person},
+            {R.drawable.kanji16,R.drawable.moon},{R.drawable.kanji17,R.drawable.sun},{R.drawable.kanji18,R.drawable.year},
+            {R.drawable.kanji19,R.drawable.yen},{R.drawable.kanji20,R.drawable.one},{R.drawable.kanji21,R.drawable.two},
+            {R.drawable.kanji22,R.drawable.three},{R.drawable.kanji23,R.drawable.four},{R.drawable.kanji24,R.drawable.five},
+            {R.drawable.kanji25,R.drawable.six},{R.drawable.kanji26,R.drawable.seven},{R.drawable.kanji27,R.drawable.eight},
+            {R.drawable.kanji28,R.drawable.nine},{R.drawable.kanji29,R.drawable.ten},{R.drawable.kanji30,R.drawable.hundred},
+            {R.drawable.kanji31,R.drawable.thousand},{R.drawable.kanji32,R.drawable.ten_thousand}};  //solution set manually created
+
+    int[] easyimagearray ={0,0,0,0,0,0};                                                                        // set of images to be shuffled randomly
+
+    void shuffledatabasearray(int[] arr){
+        Random rnd = new Random();
+        int index;
+        Log.i("Info", String.valueOf(imagedatabase.length-1));
+        for(int i=0;i<3;i++){
+            index=rnd.nextInt(imagedatabase.length-1);                      //generate random index  to get 6 image and solution sets from image database
+            if (index % 2 != 0 ) {                                              //image index should be even so to check for that
+                 index--;
+            }
+            Log.i("Info", String.valueOf(index));
+            easyimagearray[i*2]=arr[index];                                   //allot from database to image array to be used
+            easyimagearray[i*2+1]=arr[index+1];
+        }
+        Log.i("Info","Array Initilaised");
+    }
+
+    static void shuffleimageArray(int[] arr)   //Code to Shuffle image array
     {
         Random rnd = new Random();
         for (int i = arr.length - 1; i > 0; i--)
         {
-            int index = rnd.nextInt(i + 1);
-            // Swap
+            int index = rnd.nextInt(i + 1);                                             // Swap
             int a = arr[index];
             arr[index] = arr[i];
             arr[i] = a;
         }
     }
+
+
 
     public void timer(View view){
         gamestate=true;
@@ -49,7 +91,7 @@ public class Easy_Level extends AppCompatActivity {
             @Override                                                                                   //value of timer will change depending on the level
             public void onTick(long millisUntilFinished) {
                 //timer_textView.setText(Integer.toString((int) (millisUntilFinished/1000)));
-                String formatted_time=String.format("%02d:%02d",
+                @SuppressLint("DefaultLocale") String formatted_time=String.format("%02d:%02d",
                         TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millisUntilFinished)),
                         TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)));
                 timer_textView.setText(formatted_time);
@@ -69,7 +111,7 @@ public class Easy_Level extends AppCompatActivity {
     public void checkSolution(int[] toCheck){
 
         int flag=0;               //flag variable used to check if the condition was satisfied in the loop
-        for(int i=0;i<3;i++){    //looping through solution set which is a matrix of 3x2 value of matrix will change with levels
+        for(int i=0;i< solutions.length;i++){    //looping through solution set
             int j=0;
             if((solutions[i][j]==toCheck[0] && solutions[i][j+1]==toCheck[1]) || (solutions[i][j]==toCheck[1] && solutions[i][j+1]==toCheck[0])) {
                 flag=1;
@@ -102,13 +144,14 @@ public class Easy_Level extends AppCompatActivity {
     }
 
     public void resetgame(){
-        timer_textView.setText("00:15"); //setting textview to 00:00
-        countDownTimer.cancel();        //reseting timer
-        gamescore = 0;                 //reseting game score
-        gamestate=false;              //not allowing game to be played
-        setImages();                 //reseting the question mark images
-        shuffleArray(imageArray);   //shuffle function called to shuffle the images randomly
-        updateleaderboard();       //function call to update scoreboard
+        timer_textView.setText("00:15");    //setting textview to 00:00
+        countDownTimer.cancel();            //reseting timer
+        gamescore = 0;                      //reseting game score
+        gamestate=false;                        //not allowing game to be played
+        setImages();                        //reseting the question mark images
+        shuffledatabasearray(imagedatabase);   //shuffle function called to shuffle and assign the database images randomly
+        shuffleimageArray(easyimagearray);         //shuffle function called to shuffle the images randomly
+        updateleaderboard();                //function call to update scoreboard
     }
     public void setImages(){
         im1.setImageResource(R.drawable.questionmark);
@@ -119,7 +162,7 @@ public class Easy_Level extends AppCompatActivity {
         im6.setImageResource(R.drawable.questionmark);
     }//set question mark if the image chosen is wrong
 
-    int[] sendToCheck ={imageArray[0],imageArray[0]}; //checking array inside ignore the values
+    int[] sendToCheck ={easyimagearray[0], easyimagearray[0]}; //checking array inside ignore the values
 
     public void animate (View view){
         if(gamestate) {
@@ -127,33 +170,33 @@ public class Easy_Level extends AppCompatActivity {
                 switch (view.getId())     //code to get imageview id to flip the image using switch case
                 {
                     case R.id.mediumimageView1: {
-                        im1.setImageResource(imageArray[0]);        //setting images according to the shuffled image array
-                        sendToCheck[cardCount] = imageArray[0];    //appending the array to pass to the checking function
+                        im1.setImageResource(easyimagearray[0]);        //setting images according to the shuffled image array
+                        sendToCheck[cardCount] = easyimagearray[0];    //appending the array to pass to the checking function
                         break;
                     }
                     case R.id.mediumimageView2: {
-                        im2.setImageResource(imageArray[1]);
-                        sendToCheck[cardCount] = imageArray[1];
+                        im2.setImageResource(easyimagearray[1]);
+                        sendToCheck[cardCount] = easyimagearray[1];
                         break;
                     }
                     case R.id.mediumimageView3: {
-                        im3.setImageResource(imageArray[2]);
-                        sendToCheck[cardCount] = imageArray[2];
+                        im3.setImageResource(easyimagearray[2]);
+                        sendToCheck[cardCount] = easyimagearray[2];
                         break;
                     }
                     case R.id.mediumimageView4: {
-                        im4.setImageResource(imageArray[3]);
-                        sendToCheck[cardCount] = imageArray[3];
+                        im4.setImageResource(easyimagearray[3]);
+                        sendToCheck[cardCount] = easyimagearray[3];
                         break;
                     }
                     case R.id.mediumimageView5: {
-                        im5.setImageResource(imageArray[4]);
-                        sendToCheck[cardCount] = imageArray[4];
+                        im5.setImageResource(easyimagearray[4]);
+                        sendToCheck[cardCount] = easyimagearray[4];
                         break;
                     }
                     case R.id.mediumimageView6: {
-                        im6.setImageResource(imageArray[5]);
-                        sendToCheck[cardCount] = imageArray[5];
+                        im6.setImageResource(easyimagearray[5]);
+                        sendToCheck[cardCount] = easyimagearray[5];
                         break;
                     }
                     default: {
@@ -185,7 +228,8 @@ public class Easy_Level extends AppCompatActivity {
         im5=(ImageView)findViewById(R.id.mediumimageView5);
         im6=(ImageView)findViewById(R.id.mediumimageView6);
 
-        shuffleArray(imageArray);     //shuffle function called to shuffle the images randomly
+        shuffledatabasearray(imagedatabase);   //shuffle function called to shuffle and assign the database images randomly
+        shuffleimageArray(easyimagearray);     //shuffle function called to shuffle the images randomly
 
     }
 
