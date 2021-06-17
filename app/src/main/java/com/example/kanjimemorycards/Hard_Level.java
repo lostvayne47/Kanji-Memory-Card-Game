@@ -74,10 +74,9 @@ public class Hard_Level extends AppCompatActivity {
         Random rnd = new Random();
         for (int i = arr.length - 1; i > 0; i--)
         {
-            int index = rnd.nextInt(i + 1);
-            // Swap
+            int index = rnd.nextInt(i + 1);              // Assign index
             int a = arr[index];
-            arr[index] = arr[i];
+            arr[index] = arr[i];                               //Swap elements
             arr[i] = a;
         }
     }
@@ -87,7 +86,9 @@ public class Hard_Level extends AppCompatActivity {
         countDownTimer=new CountDownTimer(61000,1000){       //timer set in milliseconds with an accounted error of one second
             @Override                                                                                   //value of timer will change depending on the level
             public void onTick(long millisUntilFinished) {
-                //timer_textView.setText(Integer.toString((int) (millisUntilFinished/1000)));
+                if(millisUntilFinished/1000==5){
+                    MainActivity.audio_file.timeup_sound();
+                }                                  //timer to give alert if 5s remaining
                 @SuppressLint("DefaultLocale") String formatted_time=String.format("%02d:%02d",
                         TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millisUntilFinished)),
                         TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)));
@@ -107,29 +108,26 @@ public class Hard_Level extends AppCompatActivity {
     public void checkSolution(int[] toCheck){
 
         int flag=0;                             //flag variable used to check if the condition was satisfied in the loop
-        for(int i=0;i<solutions.length;i++){    //looping through solution set
-            int j=0;
-            if((solutions[i][j]==toCheck[0] && solutions[i][j+1]==toCheck[1]) || (solutions[i][j]==toCheck[1] && solutions[i][j+1]==toCheck[0])) {
-                flag=1;
+        for (int[] solution : solutions) {    //looping through solution set
+            int j = 0;
+            if ((solution[j] == toCheck[0] && solution[j + 1] == toCheck[1]) || (solution[j] == toCheck[1] && solution[j + 1] == toCheck[0])) {
+                flag = 1;
                 break;
             }
         }
         if (flag == 1) {                        //if flag is equal to 1 then the two cards selected match
             //Toast.makeText(getApplicationContext(), "CORRECT", Toast.LENGTH_SHORT).show();
+            MainActivity.audio_file.right_sound();                      //playing audio if cards match
             gamescore++;
         } else {
             //Toast.makeText(getApplicationContext(), Integer.toString(gamescore), Toast.LENGTH_SHORT).show();
+            MainActivity.audio_file.wrong_sound();                      //playing audio if cards don't match
             gamescore = 0;
             setImages();
         }
         if(gamescore==6){                   //checking game score to see the winning point
             Toast.makeText(getApplicationContext(), "WINNER", Toast.LENGTH_SHORT).show();
-//          try{
-//          TimeUnit.SECONDS.sleep(1);
-//          }
-//          catch(Exception e){
-//              e.printStackTrace();
-//          }
+            MainActivity.audio_file.winning_sound();                   //playing audio if user wins
             resetgame();
         }
     }// code to compare the images clicked from the solution set
@@ -252,18 +250,18 @@ public class Hard_Level extends AppCompatActivity {
         timer_textView =findViewById(R.id.timertextView);
         Button timer_start_button=findViewById(R.id.timer_start);
 
-        im1=(ImageView)findViewById(R.id.hardimageView1);   //image view 1 to 12 initialized
-        im2=(ImageView)findViewById(R.id.hardimageView2);
-        im3=(ImageView)findViewById(R.id.hardimageView3);
-        im4=(ImageView)findViewById(R.id.hardimageView4);
-        im5=(ImageView)findViewById(R.id.hardimageView5);
-        im6=(ImageView)findViewById(R.id.hardimageView6);
-        im7=(ImageView)findViewById(R.id.hardimageView7);
-        im8=(ImageView)findViewById(R.id.hardimageView8);
-        im9=(ImageView)findViewById(R.id.hardimageView9);
-        im10=(ImageView)findViewById(R.id.hardimageView10);
-        im11=(ImageView)findViewById(R.id.hardimageView11);
-        im12=(ImageView)findViewById(R.id.hardimageView12);
+        im1= findViewById(R.id.hardimageView1);   //image view 1 to 12 initialized
+        im2= findViewById(R.id.hardimageView2);
+        im3= findViewById(R.id.hardimageView3);
+        im4= findViewById(R.id.hardimageView4);
+        im5= findViewById(R.id.hardimageView5);
+        im6= findViewById(R.id.hardimageView6);
+        im7= findViewById(R.id.hardimageView7);
+        im8= findViewById(R.id.hardimageView8);
+        im9= findViewById(R.id.hardimageView9);
+        im10= findViewById(R.id.hardimageView10);
+        im11= findViewById(R.id.hardimageView11);
+        im12= findViewById(R.id.hardimageView12);
 
         shuffledatabasearray(imagedatabase);     //shuffle function called to shuffle and assign the database images randomly
         shuffleimageArray(hardimageArray);     //shuffle function called to shuffle the images randomly

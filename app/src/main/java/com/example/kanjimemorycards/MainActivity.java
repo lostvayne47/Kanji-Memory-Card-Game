@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static MainActivity.audio_file audio_file;
     TextView header;            //variables declared globally
     Button view_score;          //view button declaration
     Button play_button;         //play button button declaration
@@ -25,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     Button medium_difficulty;   //medium button declaration
     Button hard_difficulty;     //hard button declaration
     Button glossary;            //Glossary button declaration
-
     Intent change_activity;     //intent to switch between various activities
 
     @Override
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void selectdifficulty(View view){
         //Toast.makeText(this,"WORKING",Toast.LENGTH_SHORT).show();
+
         play_button.setVisibility(View.INVISIBLE);                  //change visibility of the initial headings and buttons
         view_score.setVisibility(View.INVISIBLE);
         header.setVisibility(View.INVISIBLE);
@@ -103,6 +105,29 @@ public class MainActivity extends AppCompatActivity {
     }                          //switch to leaderboard activity
 
 
+
+    public class audio_file{
+
+        public audio_file() {
+        }
+
+        public void winning_sound(){
+            MediaPlayer mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.win);
+            mediaPlayer.start();
+        }
+        public void right_sound(){
+            MediaPlayer mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.right);
+            mediaPlayer.start();
+        }
+        public void wrong_sound(){
+            MediaPlayer mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.wrong);
+            mediaPlayer.start();
+        }
+        public void timeup_sound(){
+            MediaPlayer mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.timer);
+            mediaPlayer.start();
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,17 +135,20 @@ public class MainActivity extends AppCompatActivity {
 
         //getActionBar().hide();                                             //To Hide the Action Bar
 
-        header=(TextView)findViewById(R.id.title_textview);                //main heading of the program
-        view_score=(Button)findViewById(R.id.viewscore_button);            //button for going into view score section
-        play_button=(Button)findViewById(R.id.play_button);                 //button for going to play game section
-        glossary=(Button)findViewById(R.id.glossary_button);                //buttton for going to glossary section
+        header= findViewById(R.id.title_textview);                //main heading of the program
+        view_score= findViewById(R.id.viewscore_button);            //button for going into view score section
+        play_button= findViewById(R.id.play_button);                 //button for going to play game section
+        glossary= findViewById(R.id.glossary_button);                //buttton for going to glossary section
 
-        easy_difficulty=(Button)findViewById(R.id.easy_difficulty);        //buttons for various difficulty levels
-        medium_difficulty=(Button)findViewById(R.id.medium_difficulty);
-        hard_difficulty=(Button)findViewById(R.id.hard_difficulty);
+        easy_difficulty= findViewById(R.id.easy_difficulty);        //buttons for various difficulty levels
+        medium_difficulty= findViewById(R.id.medium_difficulty);
+        hard_difficulty= findViewById(R.id.hard_difficulty);
 
         easy_difficulty.setVisibility(View.INVISIBLE);              //change visibility of the buttons to display difficulty options
         medium_difficulty.setVisibility(View.INVISIBLE);
         hard_difficulty.setVisibility(View.INVISIBLE);
+
+        audio_file=new audio_file();                            //initialising audiofile class object
     }
+
 }
