@@ -1,8 +1,10 @@
 package com.example.kanjimemorycards;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -128,7 +130,35 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer.start();
         }
     }
+
     @Override
+    public void onBackPressed() {                                  //changing display when back button is pressed
+
+        play_button.setVisibility(View.VISIBLE);                  //change visibility of the initial headings and buttons
+        view_score.setVisibility(View.VISIBLE);
+        header.setVisibility(View.VISIBLE);
+        glossary.setVisibility(View.VISIBLE);
+
+        easy_difficulty.setVisibility(View.INVISIBLE);              //change visibility of the buttons to display difficulty options
+        medium_difficulty.setVisibility(View.INVISIBLE);
+        hard_difficulty.setVisibility(View.INVISIBLE);
+
+
+        new AlertDialog.Builder(this)
+                .setTitle("Really Exit?")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton("EXIT", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        MainActivity.super.onBackPressed();
+                    }
+                }).create().show();
+    }
+
+
+
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

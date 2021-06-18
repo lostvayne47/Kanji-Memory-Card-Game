@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357928798985",
+    "project_id": "kanji-memory-card-game",
+    "storage_bucket": "kanji-memory-card-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357928798985:android:0b9dbfae2b0cf7cefb61d8",
+        "android_client_info": {
+          "package_name": "com.example.kanjimemorycards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357928798985-j7bolu10sir2b853uombln920f8q0n3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKHSIbXnguXX__heo6NhhAqkm3nmYZasA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357928798985-j7bolu10sir2b853uombln920f8q0n3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
