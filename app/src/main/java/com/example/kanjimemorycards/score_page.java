@@ -94,7 +94,7 @@ public class score_page extends AppCompatActivity {
         //data_base_recall();                                          //Calling data base recall function for SQL. Not needed for firebase due to event listener
         uploadtofirebase();                                           //Calling function to upload data to firebase
         arrayAdapter.notifyDataSetChanged();                         //notifying array adapter of data set change
-        Toast.makeText(this,"Score Submitted!",Toast.LENGTH_SHORT).show();  //Displaying to user that scores have been submitted
+
     }
 
     public void onBackPressed() {
@@ -109,6 +109,7 @@ public class score_page extends AppCompatActivity {
             Toast.makeText(this,"Please Enter your Name",Toast.LENGTH_SHORT).show();
         }else {
             firebase.child(editText.getText().toString()).setValue(scoreDatabase);      //Setting/pushing scoredatabase object to firebase
+            Toast.makeText(this,"Score Submitted!",Toast.LENGTH_SHORT).show();  //Displaying to user that scores have been submitted
         }
         Log.i("FirebaseInfo", "Data Pushed Successfully");                   //Logging for conformation
     }
